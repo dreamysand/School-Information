@@ -1,0 +1,105 @@
+		* {
+			font-family: calibri;
+		}
+		.bg-blck {
+			background: #000 !important;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+			background-image: linear-gradient(292deg, #3b0000, #000);
+			padding-bottom: 200px;
+			position: relative;
+		}
+		nav {
+			box-shadow: crimson 0px 0px 10px 10px;
+			color: white;
+			position: absolute !important;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		nav a {
+			margin-left: 0.3rem;
+		}
+		nav ul li a {
+			color: white !important;
+		}
+		nav ul li.active a {
+			color: crimson !important;
+		}
+		tbody, td, tfoot, th, thead, tr {
+		    border-color: inherit;
+		    border-style: solid;
+		    border-width: inherit !important;
+		}
+		.output {
+			margin-top: 5rem;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.output table {
+			width: 90%;
+			height: 60%;
+			color: white;
+		    background: black;
+		    border-color: crimson;
+		    box-shadow: crimson 0px 0px 10px 5px;
+		}
+		.output table td {
+			color: black;
+		    background: white;
+		}
+		.output table tr {
+			text-align: center;
+		}
+		.output table tr td a {
+			text-decoration: none;
+			color: white;
+			background: crimson;
+			padding: 4px;
+			border-radius: 2px;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			box-shadow: crimson 0px 0px 10px 10px;
+		}
+		/*RESPONSIVE*/
+		/*Tablet*/
+		@media (max-width: 1300px) {
+			.input form {
+				width: 90%;
+			}
+		}
+		/*HP 800px*/
+		@media (max-width: 800px) {
+			.input form {
+				width: 80%;
+			}
+			.input form fieldset {
+				line-height: 2rem;
+			}
+			.input form fieldset legend {
+				font-size: 1.2rem;
+			}
+			.input form fieldset input,select{
+			    height: 1.5rem;
+			}
+			.input form fieldset button {
+				font-size: 1rem;
+			}
+			.output table {
+				width: 100%;
+				font-size: 80%;
+			}
+		}
+		@media (max-width: 600px) {
+			.output table {
+				font-size: 70%;
+			}
+		}

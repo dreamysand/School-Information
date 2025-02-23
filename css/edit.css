@@ -1,0 +1,132 @@
+		* {
+			font-family: calibri;
+		}
+		.bg-blck {
+			background: #000 !important;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+			background-image: linear-gradient(292deg, #3b0000, #000);
+			padding-bottom: 200px;
+			position: relative;
+		}
+		nav {
+			box-shadow: crimson 0px 0px 10px 10px;
+			color: white;
+		}
+		nav a {
+			margin-left: 0.3rem;
+		}
+		nav ul li a {
+			color: white !important;
+		}
+		nav ul li.active a {
+			color: crimson !important;
+		}
+		tbody, td, tfoot, th, thead, tr {
+		    border-color: inherit;
+		    border-style: solid;
+		    border-width: inherit !important;
+		}
+		.layout {
+			width: 100%;
+			height: 100vh;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+		}
+		.input {
+			width: 100%;
+			height: fit-content;
+			display: flex;
+			justify-content: center;
+		}
+		.input form {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 35%;
+			padding: 1rem;
+			border: 1px solid black;
+			background: #000;
+			border-radius: 10px;
+			box-shadow: crimson 0px 0px 10px 10px;
+			color: white;
+		}
+		.input form fieldset {
+			width: 80%;
+			height: 80%;
+			line-height: 2.5rem;
+			border-radius: 10px;
+		}
+		.input form fieldset input,select{
+			width: 100%;
+		    height: 2rem;
+		    border: 1px solid transparent;
+		    border-radius: 5px;
+		    transition: border-color 0.2s;
+		}
+		.input form fieldset input:focus,.input form fieldset select:focus{
+			border: 1px solid crimson;
+    		outline: none;
+		}
+		.input form fieldset legend{
+			font-size: 1.5rem;
+		}
+		.input form fieldset #btnSend{
+			display: flex;
+			justify-content: center;
+			margin-top: 1rem;
+			width: 100%;
+			height: 2rem;
+		}
+		.input form fieldset button{
+			padding: 5px 0px;
+			width: 100%;
+			height: fit-content;
+			background-color: crimson;
+			font-weight: bold;
+			color: white;
+			font-size: 1.2rem;
+			transition: linear 0.2s;
+			border-radius: 10px;
+			border: 1px solid transparent;
+		}
+		.input form fieldset button:hover{
+			background-color: #7c0f24;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			box-shadow: crimson 0px 0px 10px 10px;
+		}
+		/*RESPONSIVE*/
+		/*Tablet*/
+		@media (max-width: 1300px) {
+			.input form {
+				width: 90%;
+			}
+		}
+		/*HP 800px*/
+		@media (max-width: 800px) {
+			.input form {
+				width: 80%;
+			}
+			.input form fieldset {
+				line-height: 2rem;
+			}
+			.input form fieldset legend {
+				font-size: 1.2rem;
+			}
+			.input form fieldset input,select{
+			    height: 1.5rem;
+			}
+			.input form fieldset button {
+				font-size: 1rem;
+			}
+			
+		}
